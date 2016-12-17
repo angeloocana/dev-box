@@ -10,13 +10,19 @@
 				color: #E2C044;
 			}
 
-			h1 { margin-left: calc(30% + 3rem); }
+			h1 { 
+				margin-top:4rem;  
+				margin-left: calc(30% + 3rem); 
+				font-size: 3rem;
+				margin-bottom: 0;
+			}
 			
 			dl, dt, dd{
 				position: relative;
 				float:left;
 				font-size: 1.5rem;
-				line-height: 4rem;
+				display: block;
+				margin-bottom:2rem;
 			}
 
 			ld, header{ width:100%;}
@@ -32,24 +38,40 @@
 		</header>
 	<section>
 		<dl>
-			<dt>Y</dt><dd>Copy line</dd>
-			<dt>p</dt><dd>Paste</dd>
-			<dt>/<span>textToSearch</span></dt><dd>Search</dd>
-			<dt>r<span>L</span></dt><dd>Replace next character with 'L'</dd>
-			<dt>:set number</dt><dd>Show line numbers</dd>
-			<dt>:%s/<span>search</span>/<span>replace</span>/gc</dt><dd>Search and Replace</dd>
-			<dt></dt><dd></dd>
-			<dt></dt><dd></dd>
-			<dt></dt><dd></dd>
-			<dt></dt><dd></dd>
-			<dt></dt><dd></dd>
-			<dt></dt><dd></dd>
-			<dt></dt><dd></dd>
-			<dt></dt><dd></dd>
-			<dt></dt><dd></dd>
-			<dt></dt><dd></dd>
-			<dt></dt><dd></dd>
-			<dt></dt><dd></dd>
+			<dt>Y</dt><dd>Copy line.</dd>
+			<dt>P</dt><dd>Paste before current line.</dd>
+			<dt>p</dt><dd>Paste.</dd>
+			<dt>/<span>textToSearch</span></dt><dd>Search.</dd>
+			<dt>n</dt><dd>Go to the next match.</dd>
+			<dt>N</dt><dd>Go to previous match.</dd>
+			<dt>r<span>L</span></dt><dd>Replace next character with 'L'.</dd>
+			<dt>:set number</dt><dd>Show line numbers.</dd>
+			<dt>:%s/<span>search</span>/<span>replace</span>/gc</dt><dd>Search and Replace.</dd>
+			<dt>:w</dt><dd>Write changes (Save).</dd>
+			<dt>:q</dt><dd>Quit.</dd>
+			<dt>i</dt><dd>insert text mode.</dd>
+			<dt>o</dt><dd>create a new line and enable insert text mode.</dd>
+			<dt>:set hlsearch</dt><dd>high light text search.</dd>
+			<dt>:set incsearch</dt><dd>It enables searching while typing.</dd>
+			<dt><span>12</span>G</dt><dd>Go to line 12.</dd>
+			<dt>gg</dt><dd>Go to the top of the file.</dd>
+			<dt>G</dt><dd>Go to the end of the file.</dd>
+			<dt>:cd <span>path</span></dt><dd>Change the working directory. Files can now be opened with relative paths. Use TAB and arrows to autocomplete directory names.</dd>
+			<dt>:pwd</dt><dd>Shows the working directory.</dd>
+			<dt>:e .</dt><dd>List working directory files and folders.</dd>
+			<dt>:e <span>file-name</dt><dd>Opens the file.</dd>
+			<dt>dd</dt><dd>Delete line.</dd>
+			<dt>u</dt><dd>Revert changes.</dd>
+			<dt>v</dt><dd>Select text.</dd>
+			<dt>V</dt><dd>Select Lines.</dd>
+			<dt>d</dt><dd>Delete selected text.</dd>
+			<dt>c</dt><dd>Delete selected text and go into Insert mode.</dd>
+			<dt>:b <span>file-name</span></dt><dd>Switch to buffer (try TAB and arrows as well).</dd>
+			<dt>:bp</dt><dd>Previous buffer.</dd>
+			<dt>h</dt><dd>Move one character to the left.</dd>
+			<dt>l</dt><dd>Move one character to the right.</dd>
+			<dt>j</dt><dd>Move one line upward.</dd>
+			<dt>k</dt><dd>Move one line down.</dd>
 			<dt></dt><dd></dd>
 			<dt></dt><dd></dd>
 			<dt></dt><dd></dd>
