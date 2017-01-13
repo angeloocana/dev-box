@@ -3,17 +3,49 @@
 		<title>Vim Help</title>
 		<style>
 			body{
-				background-color: #393E41;		
-					color: #D3D0CB;
+				background-color: #1E2019;		
+				color: #D3D0CB;
+				padding: 1rem;
+				margin: 0;
 			}
-			span{
+			
+			header, main, section, footer{
+				position: relative;
+				float: left;
+				width:100%;
+			}
+
+			section{
+				background-color: #393E41;
+				border-radius: 4px;
+				margin: 1rem 0;
+			}
+			
+			footer{
+				//background-color: #1E2019;
+			}
+
+			footer p{
+				font-size: 1.3rem;
+			}
+
+			span, a{
 				color: #E2C044;
+			}
+
+			h1, h2{				
+				margin-left: calc(30% + 3rem); 
 			}
 
 			h1 { 
 				margin-top:4rem;  
-				margin-left: calc(30% + 3rem); 
-				font-size: 3rem;
+				font-size: 4rem;
+				margin-bottom: 0;
+			}
+
+			h2{
+				margin-top: 2rem;
+				font-size: 2rem;
 				margin-bottom: 0;
 			}
 			
@@ -36,7 +68,9 @@
 		<header>
 			<h1>Vim Help</h1>
 		</header>
-	<section>
+	<main>
+		<section>
+		<h2>Basic commands</h2>
 		<dl>
 			<dt>Y</dt><dd>Copy line.</dd>
 			<dt>P</dt><dd>Paste before current line.</dd>
@@ -79,7 +113,27 @@
 			<dt></dt><dd></dd>
 			<dt></dt><dd></dd>
 		</dl>
-	</section>
+		</section>
+		<section>
+			<h2>Window Management</h2>
+			<dl>
+				<dt>ctrl-w s</dt><dd>Split window horizontally</dd>
+				<dt>ctrl-w v</dt><dd>Split vertically</dd>
+
+				<dt>ctrl-w j</dt><dd>Move focus down</dd>
+				<dt>ctrl-w k</dt><dd>Move focus up</dd>
+				<dt>ctrl-w j</dt><dd>Move buffer up one window</dd>
+				<dt>ctrl-w k</dt><dd>Move buffer down one window</dd>
+				<dt>ctrl-w c</dt><dd>Close window</dd>
+				<dt>ctrl-w o</dt><dd>Close all but current</dd>
+				<dt>ctrl-w w</dt><dd>Cycle focus</dd>
+				<dt>ctrl-w p</dt><dd>Focus previous window</dd>
+			</dl>
+		</section>
+	</main>
+	<footer>
+		<p>Created by <a href='http://angeloocana.com'>angeloocana.com</a></p>
+	</footer>
 	</body>
 </html>
 
