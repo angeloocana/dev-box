@@ -17,15 +17,19 @@
 
 			section{
 				background-color: #393E41;
-				border-radius: 4px;
+				border-radius: 1rem;
 				margin: 1rem 0;
 			}
 			
+			section > p, section h3 {
+				margin: 0 2rem;
+			}
+
 			footer{
 				//background-color: #1E2019;
 			}
 
-			footer p{
+			p{
 				font-size: 1.3rem;
 			}
 
@@ -48,6 +52,10 @@
 				font-size: 2rem;
 				margin-bottom: 0;
 			}
+
+			h3{
+				font-size: 1.5rem;
+			}
 			
 			dl, dt, dd{
 				position: relative;
@@ -62,6 +70,16 @@
 			dt{ width:30%; text-align: right;}
 
 			dd{ width:60%; margin-left:3rem; }
+
+			code{
+				background-color: #587B7F;
+				padding: 1rem;
+				margin: 1rem 0;
+				border-radius: 0.5rem;
+				position: relative;
+				float:left;
+				width: calc(100% - 2rem);
+			}
 		</style>
 	</head>
 	<body>
@@ -108,10 +126,6 @@
 			<dt>k</dt><dd>Move one line down.</dd>
 			<dt></dt><dd></dd>
 			<dt></dt><dd></dd>
-			<dt></dt><dd></dd>
-			<dt></dt><dd></dd>
-			<dt></dt><dd></dd>
-			<dt></dt><dd></dd>
 		</dl>
 		</section>
 		<section>
@@ -129,6 +143,36 @@
 				<dt>ctrl-w w</dt><dd>Cycle focus</dd>
 				<dt>ctrl-w p</dt><dd>Focus previous window</dd>
 			</dl>
+		</section>
+		<section>
+			<h2>Typescript</h2>
+			<section>
+			<h3>Typescript Syntax for Vim</h3>
+			<p>
+				<a href='https://github.com/leafgarland/typescript-vim'>https://github.com/leafgarland/typescript-vim</a>
+		<code>	
+				git clone https://github.com/leafgarland/typescript-vim.git ~/.vim/bundle/typescript-vim</code>
+			</p>
+			</section>
+			<section>
+				<h3>Tsuquyomi: Make your Vim a TypeScript IDE.</h3>
+				<p>
+					<a href='https://github.com/Quramy/tsuquyomi'>https://github.com/Quramy/tsuquyomi</a>
+</p>
+<p>
+	Tsuquyomi requires <a href='https://github.com/Shougo/vimproc.vim'>Shougo</a>
+<code>
+# Install and compile procvim.vim
+git clone https://github.com/Shougo/vimproc.vim.git ~/.vim/bundle/vimproc.vim<br/>
+cd ~/.vim/bundle/vimproc.vim<br/>
+make<br/>
+popd<br/>
+<br/>
+# Install tsuquyomi
+git clone https://github.com/Quramy/tsuquyomi.git ~/.vim/bundle/tsuquyomi
+</code>
+</p>
+			</section>
 		</section>
 	</main>
 	<footer>
