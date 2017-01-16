@@ -2,26 +2,40 @@
 	<head>
 		<title>Vim Help</title>
 <link href="https://fonts.googleapis.com/css?family=Arvo:700|Droid+Serif|Lato" rel="stylesheet">
+<link href="reset.css" rel="stylesheet"/>
 		<style>
 			body{
 				background-color: #1E2019;		
 				color: #D3D0CB;
-				padding: 1rem;
-				margin: 0;
                 font-family: 'Lato', sans-serif;
+				margin: 3.998rem 1rem;  
 			}
 			
 			header, main, section, footer{
-				position: relative;
-				float: left;
+				//position: relative;
+				//float: left;
 				width:100%;
 			}
 
-			section{
+            header, main, footer{
+                max-width: 60rem;
+                margin: 0 auto;
+            }
+
+            main > section{
 				background-color: #393E41;
 				border-radius: 1rem;
-				margin: 1rem 0;
-			}
+				margin: 0 0 2.827rem 0;                
+                position: relative;
+                float: left;
+                padding: 2.827rem 0 1.414rem 0;            
+            }
+
+            section > section:nth-child(n+3){
+                margin-top: 1.414rem;
+                position: relative;
+                float: left;
+            }
 			
 			section > p, section h3 {
 				margin: 0 2rem;
@@ -43,43 +57,50 @@
 				margin-left: calc(30% + 3rem); 
 			}
 
-			h1 { 
-				margin-top:4rem;  
-				font-size: 4rem;
-				margin-bottom: 2rem;
+			h1 {
+				font-size: 3.998rem;
+				margin-bottom: 2.827rem;
                 font-family: 'Arvo', serif;
                 font-weight: normal;
 			}
 
 			h2{
-				margin-top: 2rem;
-				font-size: 2rem;
-				margin-bottom: 0;
+				margin-top: 0;
+				font-size: 2.827rem;
+				margin-bottom: 1.414rem;
                 font-family: 'Droid Serif', serif;
                 font-weight: normal;
 			}
 
 			h3{
-				font-size: 1.5rem;
+				font-size: 1.999rem;
                 font-weight: normal;
 			}
 
-            dl, dt, dd, p, small{                
-				font-size: 1.2rem;
+            dt, dd, p{                
+				font-size: 1.414rem;
+				margin-bottom:1.414rem;
+            }
+
+            small{
+                font-size: 1rem;
             }
 			
 			dl, dt, dd{
 				position: relative;
 				float:left;
 				display: block;
-				margin-bottom:1.3rem;
 			}
 
-			ld, header{ width:100%;}
+			dl, header{ width:100%;}
 
 			dt{ width:30%; text-align: right;}
 
 			dd{ width:60%; margin-left:3rem; }
+
+            a{
+                font-size: 1rem;
+            }
 
 			code{
 				background-color: #587B7F;
@@ -133,9 +154,7 @@
 			<dt>h</dt><dd>Move one character to the left.</dd>
 			<dt>l</dt><dd>Move one character to the right.</dd>
 			<dt>j</dt><dd>Move one line upward.</dd>
-			<dt>k</dt><dd>Move one line down.</dd>
-			<dt></dt><dd></dd>
-			<dt></dt><dd></dd>
+            <dt>k</dt><dd>Move one line down.</dd>
 		</dl>
 		</section>
 		<section>
@@ -157,7 +176,7 @@
         <section>
             <h2>Indent</h2>
             <dl>
-                <dt>gg=G</dt><dd>Indent entire file</dt>
+                <dt>gg=G</dt><dd>Indent entire file</dd>
             </dl>   
         </section>
 		<section>
@@ -176,7 +195,6 @@
 					<a href='https://github.com/Quramy/tsuquyomi'>https://github.com/Quramy/tsuquyomi</a>
                 </p>
                 <p>
-            	Tsuquyomi requires <a href='https://github.com/Shougo/vimproc.vim'>Shougo</a>
                 <code>
                     # Install and compile procvim.vim
                     git clone https://github.com/Shougo/vimproc.vim.git ~/.vim/bundle/vimproc.vim<br/>
@@ -192,7 +210,7 @@
 		</section>
 	</main>
 	<footer>
-		<p>Created by <a href='http://angeloocana.com'>angeloocana.com</a></p>
+        <p><small>Created by <a href='http://angeloocana.com'>angeloocana.com</a></small></p>
 	</footer>
 	</body>
 </html>
