@@ -17,3 +17,5 @@ set autoindent
 "set smartindent
 
 filetype plugin indent on
+
+set number
